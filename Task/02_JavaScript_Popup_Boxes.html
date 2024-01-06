@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Popup Boxes</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>JavaScript Popup Boxes</h1>
+        </legend>
+        <ul>
+            <li>JavaScript has three kind of popup boxes:
+                <ol>
+                    <li>Alert box</li>
+                    <li>Confirm box</li>
+                    <li>Prompt box</li>
+                </ol>
+            </li>
+        </ul>
+        <fieldset>
+            <legend>
+                <h2>Alert box</h2>
+            </legend>
+            <ul>
+                <li>An alert box is often used if you want to make sure information comes through to the user.</li>
+                <li>When an alert box pops up, the user will have to click "OK" to proceed.</li>
+                <ul>
+                    <strong> Example :
+                        <pre>
+                        &lt;script&gt;
+                            alert("I am an alert box!");
+                        &lt;/script&gt;
+                    </pre>
+                    </strong>
+                    <script>
+                        alert("I am an alert box!");
+                    </script>
+                </ul>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Confirm box</h2>
+            </legend>
+            <ul>
+                <li>A confirm box is often used if you want the user to verify or accept something.</li>
+                <li>When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.</li>
+                <li>If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.
+                </li>
+                <ul>
+                    <strong> Example :
+                        <pre>
+                        &lt;script&gt;
+                            function myFunction() {
+                                var text;
+                                if(confirm("Click on button")){
+                                text="You pressed OK !";
+                             }
+                             else{
+                                text="You pressed CANCEL !";
+                             }
+                             document.getElementById("eg").innerHTML = text;
+                            }
+                        &lt;/script&gt;
+                    </pre>
+                    </strong>
+                    <button onclick="myFunction()">Click here</button>
+                    <p id="eg"></p>
+                    <script>
+                        function myFunction() {
+                            var text;
+                            if (confirm("Click on button")) {
+                                text = "You pressed OK !";
+                            }
+                            else {
+                                text = "You pressed CANCEL !";
+                            }
+                            document.getElementById("eg").innerHTML = text;
+                        }
+                    </script>
+                </ul>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Prompt Box</h2>
+            </legend>
+            <ul>
+                <li>A prompt box is often used if you want the user to input a value before entering a page.</li>
+                <li>When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after
+                    entering an input value.</li>
+                <li>If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns
+                    null.</li>
+                <ul>
+                    <strong> Example :
+                        <pre>
+                        &lt;script&gt;
+                        function myName() {
+                            let name;
+                            let person = prompt("Please Enter your name : ", "Meet Patel");
+                            if (person == null || person == "") {
+                                name = "User doesn't enter name...";
+                            }
+                            else {
+                                name = " Hello " + person + " How are you today...?";
+                            }
+                            document.getElementById("printName").innerHTML = name;
+                        }
+                        &lt;/script&gt;
+                    </pre>
+                    </strong>
+                    <button onclick="myName()">Click me</button>
+                    <p id="printName"></p>
+                    <script>
+                        function myName() {
+                            let name;
+                            let person = prompt("Please Enter your name : ", "Meet Patel");
+                            if (person == null || person == "") {
+                                name = "Please enter your name!!!";
+                            }
+                            else {
+                                name = " Hello " + person + " How are you today...?";
+                            }
+                            document.getElementById("printName").innerHTML = name;
+                        }
+                    </script>
+                </ul>
+            </ul>
+        </fieldset>
+    </fieldset>
+</body>
+
+</html>
