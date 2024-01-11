@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>03 Hoisting</h1>
+        </legend>
+        <ul>
+            <li>In JavaScript, a variable can be declared after it has been used.</li>
+            <li>In other words; a variable can be used before it has been declared.</li>
+            <ul>
+                <li><strong>Example: </strong>
+
+                <li type="none">
+                    <pre>
+                        <strong>
+                            x = 5;
+                            elem = document.getElementById("demo"); //Fetch a element
+                            elem.innerHTML = x; //Display
+                            
+                            var x; // Declaration
+                        </strong>
+                        </pre>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <strong>Output: </strong>
+                    <strong>
+                        <p id="demo"></p>
+                    </strong>
+                    <script>
+                        x = 5;
+                        elem = document.getElementById("demo"); //Fetch a element
+                        elem.innerHTML = x; //Display
+                        var x; // Declaration
+                    </script>
+                </li>
+            </ul>
+            </li>
+        </ul>
+    </fieldset>
+</body>
+
+</html>
