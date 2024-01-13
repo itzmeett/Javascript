@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics & DOMS</title>
+    <style>
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        hr {
+            width: 70%;
+            height: 3px;
+            background-color: gray;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>Javascript Basics & DOMS</h1>
+        </legend>
+        <fieldset>
+            <legend>
+                <h2>01 What is Javascript ?</h2>
+            </legend>
+            <ul>
+                <li>JavaScript is the Programming Language for the Web.</li>
+                <li>JavaScript can update and change both HTML and CSS.</li>
+                <li>JavaScript can calculate, manipulate and validate data.</li>
+                <li>JavaScript Can Change HTML Content</li>
+                <li>JavaScript Can Change HTML Attribute Values</li>
+                <li>JavaScript Can Change HTML Styles (CSS)</li>
+                <li>JavaScript Can Hide HTML Elements</li>
+                <li>JavaScript Can Show HTML Elements</li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>02 What is the use of isNaN function?</h2>
+            </legend>
+            <li>isNaN() method returns true if a value is Not-a-Number.</li>
+            <li>Number.isNaN() returns true if a number is Not-a-Number.</li>
+            <li>isNaN() converts the value to a number before testing it.</li>
+            <fieldset>
+                <legend>
+                    <h3>Example:</h3>
+                </legend>
+                <strong>
+
+                    <pre>
+                        &lt;p&gt;Is "TOPS Technologies" NaN?&lt;/p&gt;
+                        &lt;p id="demo"&gt;&lt;/p&gt;
+                        
+                        &lt;script&gt;
+                        let txt = "Meet Patel";
+                        document.getElementById("demo").innerHTML = isNaN(txt);
+                        &lt;/script&gt;
+                    </pre>
+                </strong>
+
+                <h3>Output :</h3>
+
+                <strong>
+
+                    <p>Is "Meet Patel" NaN?</p>
+                    <p id="NaN"></p>
+
+                    <script>
+                        let txt = "Meet Patel";
+                        document.getElementById("NaN").innerHTML = isNaN(txt);
+                    </script>
+                </strong>
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>03 What is negative Infinity?</h2>
+            </legend>
+            <li>Number.NEGATIVE_INFINITY returns negative infinity.</li>
+            <li>Number.NEGATIVE_INFINITY is "a number lower than any other number".</li>
+            <li>NEGATIVE_INFINITY is a property of the JavaScript Number object.</li>
+            <fieldset>
+                <legend>
+                    <h3>Example:</h3>
+                </legend>
+                <strong>
+
+                    <pre>
+                        &lt;p&gt;Number.NEGATIVE_INFINITY returns negative Infinity:&lt;/p&gt;
+                        &lt;p id="demo"&gt;&lt;/p&gt;
+                        
+                        &lt;script&gt;
+                        document.getElementById("demo").innerHTML = Number.NEGATIVE_INFINITY;
+                        &lt;/script&gt;
+                    </pre>
+                </strong>
+
+                <h3>Output :</h3>
+
+                <strong>
+                    <p>Number.NEGATIVE_INFINITY returns negative Infinity:</p>
+                    <p id="Infinity"></p>
+                    <script>
+                        document.getElementById("Infinity").innerHTML = Number.NEGATIVE_INFINITY;
+                    </script>
+                </strong>
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>04 Which company developed JavaScript?</h2>
+            </legend>
+            <li>JavaScript was invented by Brendan Eich in 1995.</li>
+            <li>It was developed for Netscape 2, and became the ECMA-262 standard in 1997.</li>
+            <li>After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript
+                for the Firefox browser.</li>
+            <li>Mozilla's latest version was 1.8.5. (Identical to ES5).</li>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>05 What are undeclared and undefined variables ?</h2>
+            </legend>
+            <ul>
+                <li><strong>Undefined:</strong> It occurs when a variable has been declared but has not been assigned
+                    any value. Undefined is not a keyword.
+                </li>
+                <li><strong>Undeclared : </strong> It occurs when we try to access any variable that is not initialized
+                    or declared earlier using the var or const keyword. If we use ‘typeof’ operator to get the value of
+                    an undeclared variable, we will face the runtime error with the return value as “undefined”. The
+                    scope of the undeclared variables is always global. </li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h3>Example : </h3>
+                </legend>
+                <strong>
+                    <pre>
+                        let student;
+                        undefined
+                        console.log(student);
+                    </pre>
+                </strong>
+                <h3>Output : </h3>
+                // ReferenceError: myVariable is not defined
+                console.log(myVariable)
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Example: </h3>
+                </legend>
+                <strong>
+                    <pre>
+                        function student() {
+
+                            // 'use strict' verifies that no undeclared
+                            // variable is present in our code
+                            'use strict';
+                            x = "Tops Technology";
+                        }
+                        
+                        student(); // Accessing the above function
+                    </pre>
+                </strong>
+                <h3>Output : </h3>
+                ReferenceError: x is not defined
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>06 Write the code for adding new elements dynamically?</h2>
+            </legend>
+            <fieldset>
+                <legend>
+                    <h3>Example : </h3>
+                </legend>
+                <ul>
+                    <li>In the below example, we are going to add an HTML element with the click of a button. Whenever
+                        the button will be clicked we will be adding an HTML element to the already created page.</li>
+                </ul>
+                <style>
+                    .eg h1 {
+                        color: #4c92be;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    #mybutton {
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    #innerdiv {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                </style>
+                </head>
+
+                <body>
+                    <h1 class="eg">
+                        Welcome To TOPS Technologies
+                    </h1>
+                    <div id="innerdiv"></div>
+                    <button id="mybutton">
+                        Add element
+                    </button>
+                    <script>
+                        document.getElementById("mybutton").
+                            addEventListener("click", function () {
+                                document.getElementById("innerdiv").innerHTML += "<h3>Hello Student</h3><p>Start your learning journey today.</p>";
+                            });
+                    </script>
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>07 What is the difference between ViewState and SessionState?</h2>
+            </legend>
+            <table class="tb" cellpadding="8px">
+                <thead>
+                    <tr>
+                        <th>ViewState</th>
+                        <th>SessionState</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maintained at page level only.</td>
+                        <td>Maintained at session level.</td>
+                    </tr>
+                    <tr>
+                        <td>View state can only be visible from a single page and not multiple pages.</td>
+                        <td>Session state value availability is across all pages available in a user session.</td>
+                    </tr>
+                    <tr>
+                        <td>It will retain values in the event of a postback operation occurring.</td>
+                        <td>In session state, user data remains in the server. Data is available to user until the
+                            browser is closed or there is session expiration.</td>
+                    </tr>
+                    <tr>
+                        <td>Information is stored on the client’s end only.</td>
+                        <td>Information is stored on the server.</td>
+                    </tr>
+                    <tr>
+                        <td> used to allow the persistence of page-instance-specific data.</td>
+                        <td> used for the persistence of user-specific data on the server’s end.</td>
+                    </tr>
+                    <tr>
+                        <td>ViewState values are lost/cleared when new page is loaded.</td>
+                        <td>SessionState can be cleared by programmer or user or in case of timeouts.</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>08 What is === operator? </h2>
+            </legend>
+            <ul>
+                <li>The strict equality (===) operator checks whether its two operands are equal, returning a Boolean
+                    result. Unlike the equality operator, the strict equality operator always considers operands of
+                    different types to be different.</li>
+                <strong>
+                    <pre>
+                            &lt;p&gt;Assign 5 to x, and display the value of the comparison (x === 5):&lt;/p&gt;
+                            &lt;p id="demo"&gt;&lt;/p&gt;
+                            
+                            &lt;script&gt;
+                            let x = 5;
+                            document.getElementById("demo").innerHTML = (x === 5);
+                            &lt;/script&gt;
+                        </pre>
+                </strong>
+                <h3>Output :</h3>
+                <strong>
+
+                    <p>Assign 5 to x, and display the value of the comparison (x === 5):</p>
+                    <p id="strict-equality"></p>
+
+                    <script>
+                        let x = 5;
+                        document.getElementById("strict-equality").innerHTML = (x === 5);
+                    </script>
+                </strong>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>09 How can the style/class of an element be changed?</h2>
+            </legend>
+            <ul>
+                <li>We can change, add or remove any CSS property from an HTML element on the occurrence of any event
+                    with the help of JavaScript.</li>
+                <li>There are two common approaches that allow us to achieve this task.
+                    <ol>
+                        <li>style.property</li>
+                        <li>Changing the class itself</li>
+                    </ol>
+                </li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h3>style.property</h3>
+                </legend>
+                <strong>SYNTAX : document.getElementById("id").classList</strong>
+                <h2 style="color: green;">
+                    style.property
+                </h2>
+
+                <h3>
+                    How can the style/class of
+                    an element be changed?
+                </h3>
+
+                <b>Validate Pan Number</b>
+
+                <input type="text" id="pan" />
+                <p></p>
+                <button id="submit">Validate</button>
+
+                <script>
+                    const btn = document.getElementById("submit");
+                    btn.addEventListener("click", function () {
+                        const pan = document.getElementById("pan").value;
+                        const para = document.querySelector("p");
+
+                        let regex = /([A-Z]){5}([0-9]){4}([A-Z]){1}$/;
+                        if (regex.test(pan.toUpperCase())) {
+                            para.innerHTML = "Hurrey It's correct";
+
+                            // Inline style
+                            para.style.color = "green";
+                        } else {
+                            para.innerHTML = "OOps It's wrong!";
+
+                            // Inline style
+                            para.style.color = "red";
+                        }
+                    });
+                </script>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Changing the class itself</h3>
+                </legend>
+                <strong>SYNTAX : document.getElementById("id").style.property = new_style</strong>
+                <style>
+                    .default {
+                        background-color: lightyellow;
+                    }
+
+                    .changedClass {
+                        background-color: forestgreen;
+                    }
+                </style>
+                <h2 style="color:forestgreen">
+                    Change class name of element
+                </h2>
+                <button class="default" onclick="changeClass()" id="myButton">
+                    Click Here!
+                </button><br>
+                <p id="myPara">
+                    Old class name: default
+                </p>
+
+                <script>
+                    function changeClass() {
+                        document.getElementById('myButton')
+                            .className = "changedClass";
+                        let button_class = document.getElementById('myButton')
+                            .className;
+                        document.getElementById('myPara')
+                            .innerHTML = "New class name: "
+                            + button_class;
+                    }
+                </script>
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>10 How to read and write a file using JavaScript?</h2>
+            </legend>
+            <ul>
+                <li>On the client side, you can’t read or write files in JavaScript browsers.</li>
+                <li>The fs module in Node.js may be used to accomplish this on the server-side.</li>
+                <li>It has methods for reading and writing files on the file system that are both synchronous and
+                    asynchronous. </li>
+                <li>Let’s demonstrate some examples of reading and writing files with the node.js fs module.</li>
+                <li> The <strong>fs.readFile()</strong> and <strong>rs.writeFile()</strong> methods are used to read and
+                    write of a file using javascript.</li>
+                <li> The file is read using the fs.readFile() function, which is an inbuilt method.</li>
+                <li>This technique reads the full file into memory and stores it in a buffer.</li>
+                <li><strong>SYNTAX : fs.readFile( file_name, encoding, callback_function )</strong></li>
+                <li><strong>SYNTAX : fs.writeFile( file_name, data, options, callback )</strong></li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>11 What are all the looping structures in JavaScript?</h2>
+            </legend>
+            <ul>
+                <li>Loops can execute a block of code a number of times.</li>
+                <li>JavaScript supports different kinds of loops:</li>
+                <br>
+                <ol>
+                    <li>for - loops through a block of code a number of times</li>
+                    <li>for/in - loops through the properties of an object</li>
+                    <li>for/of - loops through the values of an iterable object</li>
+                    <li>while - loops through a block of code while a specified condition is true</li>
+                    <li>do/while - also loops through a block of code while a specified condition is true</li>
+                </ol>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>12 How can you convert the string of any base to an integer in JavaScript?</h2>
+            </legend>
+            <ul>
+                <li>In JavaScript parseInt() function (or a method) is used to convert the passed-in string parameter or
+                    value to an integer value itself.</li>
+                <li>This function returns an integer of the base which is specified in the second argument of the
+                    parseInt() function.</li>
+                <li><strong>SYNTAX : </strong>parseInt(Value, radix)</li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h3>Example : </h3>
+                </legend>
+                <strong>
+
+                    <pre>
+                        function convertStoI() {
+                        let a = "100";
+                        let b = parseInt(a);
+                        console.log("Integer value is" + b);
+                        let d = parseInt("3 11 43");
+                        console.log('Integer value is ' + d);
+                    }
+                    convertStoI();
+                </strong>
+                </pre>
+                    <script>
+
+                        function convertStoI() {
+                            let a = "100";
+                            let b = parseInt(a);
+                            console.log("Integer value is" + b);
+                            let d = parseInt("3 11 43");
+                            console.log('Integer value is ' + d);
+                        }
+                        convertStoI();
+                    </script>
+                    <h3>Output: </h3>
+                    <strong>
+                        Integer value is 100 <br>
+                        Integer value is 3
+                    </strong>
+
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>13 What is the function of the delete operator ?</h2>
+            </legend>
+            <ul>
+                <li>In JavaScript, the delete Operator’s main purpose is to remove a property from an object. In this
+                    article, we are going to learn about delete Operator in JavaScript.</li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h3>Example :</h3>
+                </legend>
+                <strong>
+                    <pre>
+                        let emp = { 
+                            firstName: "Raj", 
+                            lastName: "Kumar", 
+                            salary: 40000 
+                        } 
+                        
+                        console.log(delete emp.salary);
+                        console.log(emp);                        
+                    </pre>
+                </strong>
+                <script>
+                    let emp = {
+                        firstName: "Virat",
+                        lastName: "Kohli",
+                        salary: 18000
+                    }
+
+                    console.log(delete emp.salary);
+                    console.log(emp);
+                </script>
+                <strong>
+                    <h3>Output :</h3>
+                    true <br>
+                    { firstName: 'Virat', lastName: 'Kohli' }
+                </strong>
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>14 What are all the types of Pop up boxes available in JavaScript?</h2>
+            </legend>
+            <iframe src="Ref/Popup_Boxes.html" frameborder="1" height="600px" width="1000px"></iframe>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>15 What is the use of Void (0)?</h2>
+            </legend>
+            <ul>
+                <li>It is often used when inserting an expression in a web page might produce some unwanted effect.</li>
+                <li>To remove this effect, “javascript:void(0)” is used.</li>
+                <li>This expression returns undefined primitive value.</li>
+                <li>This is often used with hyperlinks.</li>
+                <li>Sometimes, you will decide to call some JavaScript from inside a link.</li>
+                <li>Normally, when you click a link, the browser loads a brand new page or refreshes the same page
+                    (depending on the URL specified).</li>
+                <li> But you most likely don’t desire this to happen if you have hooked up some JavaScript thereto link.
+                </li>
+                <li>To prevent the page from refreshing, you could use void(0). </li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>16 How can a page be forced to load another page in JavaScript?</h2>
+            </legend>
+            <ul>
+                <li>We can use window.location property inside the script tag to forcefully load another page in
+                    Javascript. </li>
+                <li>It is a reference to a Location object that is it represents the current location of the document.
+                </li>
+                <li>We can change the URL of a window by accessing it.</li><br>
+                <li><strong>SYNTAX :
+                        <pre>
+                        &lt;script&gt;
+                        window.location = &lt;Path / URL&gt;
+                            &lt;/script&gt;
+                    </pre>
+                    </strong>
+                </li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>17 What are the disadvantages of using innerHTML in JavaScript?</h2>
+            </legend>
+            <ul>
+                <li>The use of innerHTML very slow</li>
+                <li>Preserves event handlers attached to any DOM elements</li>
+                <li>Content is replaced everywhere</li>
+                <li>Appending to innerHTML is not supported</li>
+                <li>Old content replaced issue</li>
+                <li>Can break the document</li>
+                <li>Can also be used for Cross-site Scripting(XSS)</li>
+            </ul>
+        </fieldset>
+    </fieldset>
+</body>
+
+</html>
