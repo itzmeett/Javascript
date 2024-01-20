@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>typeof() function</title>
+</head>
+
+<body>
+    <div class="question">
+        7. Check if typeof '10' is exactly equal to 10. If not make it exactly equal?
+    </div>
+    <div class="answer">
+        <p>You can use the typeof operator to find the data type of a JavaScript variable.</p>
+        <p>You cannot use typeof to determine if a JavaScript object is an array (or a date).</p>
+    </div>
+    <div class="code-right code">
+        <pre>
+typeof "Meet"                 // Returns "string"
+typeof 21                   // Returns "number"
+typeof NaN                    // Returns "number"
+typeof true                  // Returns "boolean"
+typeof [1,2,3,4]              // Returns "object"
+typeof {name:'Meet', age:21}  // Returns "object"
+typeof new Date()             // Returns "object"
+typeof function () {}         // Returns "function"
+typeof myName                  // Returns "undefined" *
+typeof null                   // Returns "object"
+        </pre>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="08_Area_of_Triangle.html">Next</a></button>
+    </div>
+</body>
+
+</html>

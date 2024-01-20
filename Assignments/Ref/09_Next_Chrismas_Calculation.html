@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Next Chrismas Calculation</title>
+</head>
+
+<body>
+    <div class="question">
+        9. Write a JavaScript program to calculate days left until next Christmas?
+    </div>
+    <div class="answer">
+        <!-- <p>You can use the typeof operator to find the data type of a JavaScript variable.</p>
+        <p>You cannot use typeof to determine if a JavaScript object is an array (or a date).</p> -->
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+
+let today = new Date; // it creates today object
+
+let christmasYear = today.getFullYear(); // it gates current year
+
+// Check if the current date is 
+// already past by checking if the month 
+// is December and the current day 
+// is greater than 25 
+if (today.getMonth() == 11 && today.getDate() > 25) {
+    christmasYear += 1;
+}
+
+// set the christmasYear date of current year
+let christmasYearRemainTime = new Date(christmasYear, 11, 25);
+
+// get time in miliseconds
+let time = 1000 * 60 * 60 * 24;
+
+// calculation of getting remaining days
+let remainDays = Math.ceil((christmasYearRemainTime.getTime() - today.getTime()) / time);
+
+// put the answer on html element
+console.log(remainDays);
+document.getElementById('answer').innerHTML = remainDays +' days are remaining for Christmas-' + christmasYear;
+&lt;/script&gt;
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <script>
+                let today = new Date; // it creates today object
+
+                let christmasYear = today.getFullYear(); // it gates current year
+
+                // Check if the current date is 
+                // already past by checking if the month 
+                // is December and the current day 
+                // is greater than 25 
+                if (today.getMonth() == 11 && today.getDate() > 25) {
+                    christmasYear += 1;
+                }
+
+                // set the christmasYear date of current year
+                let christmasYearRemainTime = new Date(christmasYear, 11, 25);
+
+                // get time in miliseconds
+                let time = 1000 * 60 * 60 * 24;
+
+                // calculation of getting remaining days
+                let remainDays = Math.ceil((christmasYearRemainTime.getTime() - today.getTime()) / time);
+
+                // put the answer on html element
+                console.log(remainDays);
+                document.getElementById('answer').innerHTML = remainDays +' days are remaining for Christmas-' + christmasYear;
+
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="10_Condition_Statement.html">Next</a></button>
+    </div>
+</body>
+
+</html>

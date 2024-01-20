@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Get file extension</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="question">
+            11.Find circumference of Rectangle formula : C = 4 * a ?
+        </div>
+        <div class="answer">
+            <!-- <p>You can use the typeof operator to find the data type of a JavaScript variable.</p>
+            <p>You cannot use typeof to determine if a JavaScript object is an array (or a date).</p> -->
+        </div>
+        <div class="side">
+            <div class="code">
+                <pre>
+&lt;h3&gt;Insert file below :&lt;/h3&gt;
+&lt;form action=""&gt;
+    &lt;input type="file" id="file" &gt; 
+    &lt;input type="button" value="Get Extension" onclick="getExtension();" /&gt;
+&lt;/form&gt;
+&lt;h3 class="output"&gt;&lt;/h3&gt;
+&lt;script&gt;
+function getExtension(){
+    var filename = document.querySelector('#file').value;
+    const extension = filename.split('.').pop();
+    document.getElementsByClassName('output')[0].innerText ='Inserted file extension = '+ extension;
+    console.log(extension);
+    }
+&lt;/script&gt;
+                </pre>
+            </div>
+            <div class="output-border">
+                <h3>Insert file below :</h3>
+                <form action="">
+                    <input class="form-btn" type="file" id="file">
+                    <input class="form-btn" type="button" value="Get Extension" onclick="getExtension();" />
+                </form>
+                <h3 class="output"></h3>
+                <script>
+                    function getExtension() {
+                        var filename = document.querySelector('#file').value;
+                        const extension = filename.split('.').pop();
+                        document.getElementsByClassName('output')[0].innerText = 'Inserted file extension = ' + extension;
+                        console.log(extension);
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="btn-parent">
+            <button class="btn"><a href="12_Days_&_Years_Convertor.html">Next</a></button>
+        </div>
+
+
+
+    </body>
+
+</html>

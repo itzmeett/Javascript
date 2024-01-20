@@ -1,0 +1,196 @@
+        @font-face {
+            font-family: regular-font;
+            src: url(roboto-slab/RobotoSlab-Regular.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #FFF4B3;
+            color: #61523b;
+            font-size: 1.5rem;
+            margin: 0 3rem;
+            font-family: regular-font;
+        }
+
+        hr {
+            border: 1px dashed #40a99b;
+            margin-bottom: 1rem;
+        }
+
+        /* question styling START*/
+
+        .question {
+            font-size: 40px;
+            background-color: #fec13c;
+            color: #61523b;
+            font-weight: bolder;
+            margin-top: 15px;
+            margin-bottom: 35px;
+            border-radius: 6px;
+            padding: 12px;
+            border-left: 40px solid #e4da14;
+        }
+
+        /* question styling END*/
+
+        /* answer styling START */
+
+        .answer p {
+            padding: 8px 20px;
+            padding-left: 40px;
+        }
+
+        .answer p:hover {
+            color: #61523b;
+            background-color: #e4da14;
+            border-radius: 6px;
+        }
+
+        .answer p:last-child {
+            margin-bottom: 2rem;
+
+        }
+
+        .short-answer {
+            background-color: #fec13c;
+            padding: 12px;
+            max-width: 70%;
+            font-size: 18px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .short-answer:hover {
+            background-color: #e4da14;
+        }
+
+        /* answer styling END */
+
+        /* Button styling START */
+        .btn-parent {
+            display: flex;
+            justify-content: flex-end;
+            margin: 2.5rem 0;
+            border-radius: 6px;
+        }
+
+        .btn {
+            font-size: 25px;
+            padding: 10px 48px;
+            border-radius: 6px;
+            font-weight: bolder;
+            background-color: #61523b;
+            cursor: pointer;
+            border: none;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+
+        .btn a {
+            color: #FFF4B3;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            width: 160px;
+            height: 60px;
+        }
+
+        /* Button styling END */
+
+        /* code-block area styling START*/
+        .code pre {
+            white-space: pre-wrap;
+        }
+
+        .code {
+            /* position: relative; */
+            border-radius: 0.75rem;
+            padding: 1rem;
+            background-color: #fec13c;
+            max-width: 700px;
+            height: 400px;
+            color: #61523b;
+            font-size: 18px;
+            /* margin-top: 2rem; */
+            text-wrap: wrap;
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+
+        .code-right {
+            margin-left: auto;
+        }
+
+        span {
+            background-color: #40a99b;
+            color: #FFF4B3;
+        }
+
+        .output-border {
+            border: 2px dashed #40a99b;
+            padding: 1rem;
+            word-wrap: break-word;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 18px;
+            width: 700px;
+        }
+
+        .side {
+            /* grid-template-columns: auto auto;
+            display: grid;
+            grid-column-gap: 1rem; */
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+
+        .output {
+            border: 2px solid #40a99b;
+            border-radius: 6px;
+            padding: 2rem;
+            font-size: 18px;
+            height: max-content;
+
+        }
+
+        /* code-block area styling END*/
+
+        /* answer-3 styling of h3 and list START */
+        .answer h3 {
+            margin-left: 40px;
+            margin-top: 12px;
+        }
+
+        .answer>.list-space {
+            padding-left: 5rem;
+        }
+
+        /* answer-3 styling of h3 and list END */
+
+        .parent-program {
+            display: flex;
+            justify-content: center;
+        }
+
+        .program {
+            border: 1px solid black;
+            /* max-height: max-content; */
+            min-width: 60%;
+            position: relative;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            background-color: #fec13c;
+            height: 400px;
+            color: #61523b;
+            font-size: 18px;
+            /* margin-top: 2rem; */
+            text-wrap: wrap;
+        }

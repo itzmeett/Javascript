@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Undefined & Undeclared</title>
+</head>
+
+<body>
+    <div class="question">
+        5. What the deference between undefined and undeclare in JavaScript?
+    </div>
+    <div class="side">
+        <div class="answer">
+            <h3>What is "Undeclared"?</h3>
+            <p>When a variable is "undeclared", it means that it has not been declared or defined in the current scope. </p>
+            <p>it means, it hasn't been given a value or a type. </p>
+            <p> This can happen if you try to use a variable without declaring it first, or if you misspell the variable
+                name.</p>
+            </div>
+            <div class="code-right code">
+                <pre>
+// This code will throw a ReferenceError because the variable "x" is undeclared
+console.log(x);
+
+/* This code will not throw an error because the variable "x" is declared, 
+even though it has not been initialized with a value */
+let x;
+console.log(x); // Output: undefined
+                </pre>
+            </div>
+    </div>
+    <div class="side" style="margin: 2rem;">
+        <div class="code">
+            <pre>
+let x; 
+console.log(x); //here x value does not print.
+x = 5; // Now, variable is no longer undefined. 
+console.log(x); //here x will be print'5'.
+            </pre>
+        </div>
+        <div class="answer">
+            <h3>What is "Undefined"?</h3>
+            <p>Unlike "undeclared" variables, "undefined" variables have been declared in the current scope, but have not been given a value. </p>
+            <p>In other words, they have been initialized, but their value is not defined.</p>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="06_consoleLog.html">Next</a></button>
+    </div>
+</body>
+
+</html>

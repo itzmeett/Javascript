@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Area of triangle</title>
+</head>
+<body>
+    <div class="question">
+        8. Write a JavaScript Program to find the area of a triangle?
+    </div>
+    <div class="answer">
+        <!-- <p>You can use the typeof operator to find the data type of a JavaScript variable.</p>
+        <p>You cannot use typeof to determine if a JavaScript object is an array (or a date).</p> -->
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+<span class="highlighter">&lt;h3 id="answer"&gt;&lt;/h3&gt;</span>
+
+&lt;script&gt;
+
+const height = prompt('Enter the height of Triangle');
+const base = prompt('Enter the value of Triangle\'s base');
+const area = alert('Area of triangle = '+ (height*base));   
+
+console.log('Area of triangle = '+ area);
+document.getElementById<span class="highlighter">('answer').innerHTML = 'Area of Triangle = '+ area;</span>
+
+&lt;/script&gt;
+            </pre>
+                </div>
+                <div class="output-border">
+                    <h3 id="answer"></h3>
+                    <script>
+                        let height = prompt('Enter the height of Triangle');
+                        let base = prompt('Enter the value of Triangle\'s base');
+                        let area = ((height*base)/2);
+                        let areaDisplay = alert('Area of triangle = '+ area);
+
+                        console.log('Area of triangle = '+ area);
+                        document.getElementById('answer').innerHTML = 'Area of Triangle = '+ area;
+                    </script>
+                </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="09_Next_Chrismas_Calculation.html">Next</a></button>
+    </div>
+</body>
+</html>

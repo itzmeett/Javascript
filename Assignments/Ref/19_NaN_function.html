@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>NaN() function</title>
+</head>
+<body>
+    <div class="question">
+       19. What is the use of is Nan function?</div>
+    <div class="answer">
+        <p>JavaScript, NaN is short for "Not-a-Number".</p>
+        <p><strong>isNaN()</strong> method returns true if a <strong>value</strong> is Not-a-Number.</p>
+        <p><strong>Number.isNaN()</strong> returns true if a <strong>number</strong> is Not-a-Number.</p>
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;h3 id="answer1"&gt;&lt;/h3&gt;
+&lt;h3 id="answer2"&gt;&lt;/h3&gt;
+&lt;h3 id="answer3"&gt;&lt;/h3&gt;
+&lt;h3 id="answer4"&gt;&lt;/h3&gt;
+
+&lt;script&gt;
+
+<span>let text = "Meet Pate";</span>
+
+<span>let num = 21;</span>
+
+document.getElementById('answer1').textContent = "Text in isNaN() = " + <span>isNaN(text);</span>
+document.getElementById('answer2').textContent = "Number in isNaN() = " + isNaN(num);
+document.getElementById('answer3').textContent = "Text in Number.isNaN() = " + Number.isNaN(text);
+document.getElementById('answer4').textContent = "Number in Number.isNaN() = " + <span>Number.isNaN(num);</span>
+
+&lt;/script&gt;
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer1"></h3>
+            <h3 id="answer2"></h3>
+            <h3 id="answer3"></h3>
+            <h3 id="answer4"></h3>
+            <script>
+                let text = "Meet Patel";
+                let num = 5;
+                console.log(text);
+
+                document.getElementById('answer1').textContent = "Text in isNaN() = " + isNaN(text);
+                document.getElementById('answer2').textContent = "Number in isNaN() = " + isNaN(num);
+                document.getElementById('answer3').textContent = "Text in Number.isNaN() = " + Number.isNaN(text);
+                document.getElementById('answer4').textContent = "Number in Number.isNaN() = " + Number.isNaN(num);
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="12_Days_&_Years_Convertor.html">Next</a></button>
+    </div>
+
+</body>
+</html>

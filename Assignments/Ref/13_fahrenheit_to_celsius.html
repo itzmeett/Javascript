@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="question">
+        13. Convert temperature Fahrenheit to Celsius? (Conditional logic Question)
+    </div>
+    <div class="answer">
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;            
+function fahrenheitToCelsius(fahrenheit) {
+    const celsius = (fahrenheit - 32) / 1.8;
+    return celsius;
+}
+let fahrenheit = prompt('Enter temprature in fahrenheit : ');
+document.getElementById('answer').innerHTML = fahrenheitToCelsius(fahrenheit);
+
+&lt;/script&gt;
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="fahrenheit"></h3>
+            <h3 id="answer"></h3>
+            <script>
+                function fahrenheitToCelsius(fahrenheit) {
+                    const celsius = (fahrenheit - 32) / 1.8;
+                    return celsius;
+                }
+                let fahrenheit = prompt('Enter temprature in fahrenheit : ');
+                document.getElementById('fahrenheit').innerHTML = 'You entered ' + fahrenheit + 'F degree in fahrenheit.' 
+                document.getElementById('answer').innerHTML = 'Celsius = ' + fahrenheitToCelsius(fahrenheit);
+        
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="14_Extension.html
+    </div>
+
+</body>
+
+</html>

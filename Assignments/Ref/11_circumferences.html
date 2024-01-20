@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Find Circumferences</title>
+</head>
+
+<body>
+    <div class="question">
+        11.Find circumference of Rectangle formula : C = 4 * a ?
+    </div>
+    <div class="answer">
+        <!-- <p>You can use the typeof operator to find the data type of a JavaScript variable.</p>
+        <p>You cannot use typeof to determine if a JavaScript object is an array (or a date).</p> -->
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+
+let width = prompt('Enter width of the rectangle : ');
+let height = prompt('Enter height of the rectangle : ');
+
+let Circumferences =  (2 * (height + width)); 
+console.log('Circumtferences of rectangle = ' + Circumferences);
+&lt;/script&gt;
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <script>
+                // function Circumferences(height, width)
+                // {
+                //     // let c = 
+                //     return 2 * (height + width);
+                // }
+        
+                let width = prompt('Enter width of the rectangle : ');
+                let height = prompt('Enter height of the rectangle : ');
+        
+                let Circumferences =  (2 * (height + width)); 
+                console.log('Circumtferences of rectangle = ' + Circumferences);
+                document.getElementById('answer').innerHTML = 'Circumferences of rectangular = ' + Circumferences;
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="12_Days_&_Years_Convertor.html">Next</a></button>
+    </div>
+    
+</body>
+
+</html>

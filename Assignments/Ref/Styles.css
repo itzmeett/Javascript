@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: regular-font;
+}
+
+@font-face {
+    font-family: regular-font;
+    src: url(roboto-slab/RobotoSlab-Regular.ttf);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: auto;
+    
+}
+
+/* sidebarr styling START */
+
+.sidebar h3{
+    color: #FFF4B3;
+    padding: 10px;
+}
+
+
+.sidebar a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #efdab9;;
+}
+
+.sidebar{
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #61523b;
+}
+
+.sidebar a:hover{
+    background-color: #FFF4B3;
+    color: #343233;
+}
+/* sIdebar styling END */
+
+/* iframe styling START  */
+
+.if{
+    height: 100vh;
+    width: calc(100vw - 250px);
+    border: none;
+}
+/* iframe styling END*/

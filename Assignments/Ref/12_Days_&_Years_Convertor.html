@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Days and Year Conversition</title>
+</head>
+
+<body>
+    <div class="question">
+        12. WAP to convert years into days and days into years?
+    </div>
+    <div class="answer">
+        <!-- <p>You can use the typeof operator to find the data type of a JavaScript variable.</p>
+        <p>You cannot use typeof to determine if a JavaScript object is an array (or a date).</p> -->
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+let numOfDays = prompt('Enter total days : ');
+let numOfYear = prompt('Enter numbers of year : ');
+let year, days;
+function daysToYear(numOfDays) {
+    year = <span>parseInt(numOfDays / 365);</span>  
+    return year;
+}
+
+function yearsToDays(numOfYear) {
+    days = (numOfYear * 365);
+    return days;
+}
+document.getElementById('dd').innerHTML = numOfDays + ' days are approx = ' + daysToYear(numOfDays) + ' year';
+document.getElementById('yy').innerHTML = numOfYear + ' year have approx = ' + yearsToDays(numOfYear) + ' days';
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="yy"></h3>
+            <h3 id="dd"></h3>
+            <script>
+                let numOfDays = prompt('Enter total days : ');
+                let numOfYear = prompt('Enter numbers of year : ');
+                let year, days;
+                function daysToYear(numOfDays) {
+                    year = parseInt(numOfDays / 365);
+                    return year;
+                }
+
+                function yearsToDays(numOfYear) {
+                    days = (numOfYear * 365);
+                    return days;
+                }
+                document.getElementById('dd').innerHTML = numOfDays + ' days are approx = ' + daysToYear(numOfDays) + ' year';
+                document.getElementById('yy').innerHTML = numOfYear + ' year have approx = ' + yearsToDays(numOfYear) + ' days';
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="13_fahrenheit_to_celsius.html">Next</a></button>
+    </div>
+
+</body>
+
+</html>
