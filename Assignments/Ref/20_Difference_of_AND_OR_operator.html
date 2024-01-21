@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>AND vs OR operator</title>
+</head>
+
+<body>
+
+    <div class="question">
+        20. What is the difference between && and || in JavaScript?
+    </div>
+    <div class="answer">
+        <p>The <strong>logical AND (&&)</strong> operator for a set of boolean operands will be true if and only if all
+            the operands are true. Otherwise it will be false.</p>
+        <p>The <strong>logical OR (||)</strong> operator for a set of operands is true if and only if one or more of its
+            operands is true.</p>
+        <p>it returns a Boolean value, so if this operator is used with non-Boolean values, it will return a non-Boolean
+            value.</p>
+    </div>
+    <div class="code code-right">
+        <pre>
+ &lt;script&gt;
+ const a = 3;
+ const b = -2;
+
+ console.logspan <span>(a > 0 && b > 0);</span>  // Expected output: <span>false</span>
+
+ console.logspan <span>(a > 0 || b > 0);</span>  // Expected output: <span>true</span>
+ &lt;/script&gt;
+             </pre>
+    </div>
+    <script>
+        const a = 3;
+        const b = -2;
+        console.log(a > 0 && b > 0); // Expected output: false
+        console.log(a > 0 || b > 0); // Expected output: true
+    </script>
+    <div class="btn-parent">
+        <button class="btn"><a href="21_use_of_void(0).html">Next</a></button>
+    </div>
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>AND vs OR operator</title>
+</head>
+
+<body>
+
+    <div class="question">
+        21. What is the use of Void (0)?
+    </div>
+    <div class="answer">
+        <h3>Without using javascript: void(0)</h3>
+        <p>javascript: void(0) means return undefined as a primitive value. </p>
+        <p>We use this to prevent any negative effects on a webpage when we insert some expression.</p>
+        <p>For example, in the case of URL hyperlinks. Hyperlinks open by reloading the page when the user clicks on the
+            link.</p>
+        <p>When you need to run some other code in such cases, you can use javascript: void(0).</p>
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;h2&gt;JavaScript program without using &lt;i&gt;javascript: void(0)&lt;/i&gt;&lt;/h2&gt;
+                
+&lt;a href="#" ondblclick="alert('Clicked Twice')">Double Click Me!&lt;/a&gt;
+            </pre>
+        </div>
+        <div class="output-border">
+            <h2>JavaScript program without using <i>javascript: void(0)</i></h2>
+            <div class="margin" style="margin-top: 1.2rem;">
+                <a href="#" ondblclick="alert('Clicked Twice')">Double Click Me!</a>
+                <dd style="margin-top: 1rem;">
+                    <dl>We have set # to the href and added a double-click event to the <strong>anchor tag</strong> </dl><br>
+                    <dl>Only when the user <strong>doubles clicks</strong> on the tag, does the alert trigger. </dl><br>
+                    <dl>Here the <strong>page refreshes</strong> because we have set #. </dl><br>
+                    <dl>We can also observe the <strong>color change of the link.</strong></dl><br>  
+                </dd>
+            </div>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="21_use_of_void(0).html">Next</a></button>
+    </div>
+    </script>
+</body>
+
+</html>
