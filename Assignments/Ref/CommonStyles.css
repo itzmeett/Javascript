@@ -98,8 +98,10 @@
         }
         
         .btn:hover {
-            width: 160px;
-            height: 60px;
+            /* width: 160px;
+            height: 60px; */
+            background-color: #594b37;
+            border: 2px solid #594b37;
         }
 
         /* .form-btn{
