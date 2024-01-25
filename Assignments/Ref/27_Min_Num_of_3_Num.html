@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Find SMALLEST Number</title>
+</head>
+
+<body>
+    <div class="question">
+        27. Write to find minimum number among 3 numbers using ternary operator in JS?
+    </div>
+    <div class="answer">
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+&lt;script&gt;
+alert('This programs checks the SMALLEST Number among of three numbers');
+let num1 = parseInt(prompt('Enter Number - 1 : '));
+let num2 = parseInt(prompt('Enter Number - 2 : '));
+let num3 = parseInt(prompt('Enter Number - 3 : '));
+
+<span>(num1 < num2 && num1 < num3) ?</span> document.getElementById("answer").innerText = num1 + ' is SMALLEST NUMBER' : <span>(num2 < num1 && num2 < num3) ?</span> document.getElementById("answer").innerText = num2 + ' is SMALLEST NUMBER' : <span>(num3 < num1 && num3 < num2) ?</span> document.getElementById("answer").innerText = num3 + ' is SMALLEST NUMBER' : document.getElementById("answer").innerText = 'You have not inserted any value';
+&lt;/script&gt;
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <script>
+                alert('This programs checks the SMALLEST Number among of three numbers');
+                let num1 = parseInt(prompt('Enter Number - 1 : '));
+                let num2 = parseInt(prompt('Enter Number - 2 : '));
+                let num3 = parseInt(prompt('Enter Number - 3 : '));
+
+                (num1 < num2 && num1 < num3) ? document.getElementById("answer").innerText = num1 + ' is SMALLEST NUMBER' : (num2 < num1 && num2 < num3) ? document.getElementById("answer").innerText = num2 + ' is SMALLEST NUMBER' : (num3 < num1 && num3 < num2) ? document.getElementById("answer").innerText = num3 + ' is SMALLEST NUMBER' : document.getElementById("answer").innerText = 'You have not inserted any value';
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="28_largest_of_three_number.html">Next</a></button>
+    </div>
+
+</body>
+
+</html>

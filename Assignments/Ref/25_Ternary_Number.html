@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Ternary Number</title>
+</head>
+
+<body>
+    <div class="question">
+        25. Write to find number is even or odd using ternary operator in JS?</div>
+    <div class="answer">
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+&lt;script&gt;
+alert('This programs check the number is ODD or EVEN');
+let num = parseInt(prompt('Enter any Number : '));
+
+<span>(num % 2 == 0) ?</span> document.getElementById("answer").innerText = num + ' is EVEN' : <span>(!num % 2 == 0) ?</span> document.getElementById("answer").innerText = num + ' is ODD' :  document.getElementById("answer").innerText = 'You have not inserted any value';
+&lt;/script&gt;
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <script>
+                alert('This programs check the number is ODD or EVEN');
+                let num = parseInt(prompt('Enter any Number : '));
+
+                (num % 2 == 0) ? document.getElementById("answer").innerText = num + ' is EVEN' : (!num % 2 == 0) ? document.getElementById("answer").innerText = num + ' is ODD' : document.getElementById("answer").innerText = 'You have not inserted any value';
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="26_Max_Num_0f_3_Num.html"></a>
+    </div>
+
+</body>
+
+</html>

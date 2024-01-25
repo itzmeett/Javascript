@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Switch case</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        Write to show <br>
+        i. Monday to Sunday using switch case in JS? <br>
+        ii. Vowel or Consonant using switch case in JS?
+    </div>
+    <h3 style="margin:0 0 2rem 40px;">Monday to Sunday using switch case in JS?</h3>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+&lt;script&gt;
+        let day;
+        let print = document.getElementById('answer');
+        switch (new Date().getDay()) {
+            case 1:
+                day = '"MONDAY"';
+                break;
+            case 2:
+                day = '"TUESDAY"';
+                break;
+            case 3:
+                day = '"WEDNESDAY"';
+                break;
+            case 4:
+                day = '"THURSDAY"';
+                break;
+            case 5:
+                day = '"FRIDAY"';
+                break;
+            case 6:
+                day = '"SATURDAY"';
+                break;
+            case 7:
+                day = '"SUNDAY"';
+                break;
+        }
+        print.innerText = 'Today is ' + day;
+
+    &lt;/script&gt;
+</pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <script>
+                let day;
+                let print = document.getElementById('answer');
+                switch (new Date().getDay()) {
+                    case 1:
+                        day = '"MONDAY"';
+                        break;
+                    case 2:
+                        day = '"TUESDAY"';
+                        break;
+                    case 3:
+                        day = '"WEDNESDAY"';
+                        break;
+                    case 4:
+                        day = '"THURSDAY"';
+                        break;
+                    case 5:
+                        day = '"FRIDAY"';
+                        break;
+                    case 6:
+                        day = '"SATURDAY"';
+                        break;
+                    case 7:
+                        day = '"SUNDAY"';
+                        break;
+                }
+                print.innerText = 'Today is ' + day;
+            </script>
+        </div>
+    </div>
+    <h3 style="margin:0 0 2rem 40px;">Vowel or Consonant using switch case in JS?</h3>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+&lt;script&gt;
+        let day;
+        let print = document.getElementById('answer');
+        switch (new Date().getDay()) {
+            case 1:
+                day = '"MONDAY"';
+                break;
+            case 2:
+                day = '"TUESDAY"';
+                break;
+            case 3:
+                day = '"WEDNESDAY"';
+                break;
+            case 4:
+                day = '"THURSDAY"';
+                break;
+            case 5:
+                day = '"FRIDAY"';
+                break;
+            case 6:
+                day = '"SATURDAY"';
+                break;
+            case 7:
+                day = '"SUNDAY"';
+                break;
+        }
+        print.innerText = 'Today is ' + day;
+
+    &lt;/script&gt;
+</pre>
+        </div>
+        <div class="output-border">
+            <form action="">
+                <label for="">Enter Character : </label>
+                <input id="getChar" type="text">
+                <button onclick="isVowel()">
+                    Output
+                </button>
+            </form>
+            <h3 id="answer1"></h3>
+            <script>
+
+                // function isVowel() {
+                function isVowel(char) {
+                    var char = document.getElementById('getChar').value;
+                    switch (char) {
+                        case 'a':
+                        case 'e':
+                        case 'i':
+                        case 'o':
+                        case 'u':
+                        case 'A':
+                        case 'E':
+                        case 'I':
+                        case 'O':
+                        case 'U':
+                            document.getElementById('answer1').innerHTML = 'is VOWEL';
+                            break;
+
+                        default:
+                            document.getElementById('answer1').innerHTML = 'is CONSONANT';
+                            break;
+                    }
+                }
+                console.log(isVowel());
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="30_Looping_Structure.html">Next</a></button>
+    </div>
+</body>
+
+</html>

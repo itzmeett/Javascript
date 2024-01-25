@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Positive Negative Number</title>
+</head>
+
+<body>
+    <div class="question">
+        28. Write to find the largest of three numbers in JS?</div>
+    <div class="answer">
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+&lt;script&gt;
+alert('This program checks the MAXIMUM NUMBER out of three numbers')
+let num1 = parseInt(prompt('Enter Number - 1 : '));
+let num2 = parseInt(prompt('Enter Number - 2 : '));
+let num3 = parseInt(prompt('Enter Number - 3 : '));
+if (num1 > num2 && num1 > num3) {
+    document.getElementById("answer").innerText = num1 + ' is GRETEST NUMBER';
+}
+else if (num2 > num1 && num2 > num3) {
+    document.getElementById("answer").innerText = num2 + ' is GRETEST NUMBER';
+}
+else if(num3 > num1 && num3 > num2){
+    document.getElementById("answer").innerText = num3 + ' is GRETEST NUMBER';
+}
+else{
+    document.getElementById("answer").innerText = 'You have not inserted any value';
+}            
+&lt;/script&gt;
+</pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <script>
+                alert('This program checks the MAXIMUM NUMBER out of three numbers')
+                let num1 = parseInt(prompt('Enter Number - 1 : '));
+                let num2 = parseInt(prompt('Enter Number - 2 : '));
+                let num3 = parseInt(prompt('Enter Number - 3 : '));
+                if (num1 > num2 && num1 > num3) {
+                    document.getElementById("answer").innerText = num1 + ' is GRETEST NUMBER';
+                }
+                else if (num2 > num1 && num2 > num3) {
+                    document.getElementById("answer").innerText = num2 + ' is GRETEST NUMBER';
+                }
+                else if(num3 > num1 && num3 > num2){
+                    document.getElementById("answer").innerText = num3 + ' is GRETEST NUMBER';
+                }
+                else{
+                    document.getElementById("answer").innerText = 'You have not inserted any value';
+                }
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="29_Switch_case.html">Next</a></button>
+    </div>
+
+</body>
+
+</html>

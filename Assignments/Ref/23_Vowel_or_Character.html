@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>AND operator</title>
+</head>
+
+<body>
+    <div class="question">
+        23. Find the Character Is Vowel or Not ?</div>
+    <div class="answer">
+    </div>
+    <div class="side">
+        <div class="code-right code">
+            <pre>
+&lt;script&gt;
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+let msg = alert('Check the Character Is Vowel or Not ?');
+let getValue = prompt('Enter a character = ');
+if(getValue == 'a' || getValue == 'A' || getValue == 'e' || getValue == 'E' || getValue == 'i' || getValue == 'I' || getValue == 'o' || getValue == 'O' || getValue == 'u' || getValue == 'U' )
+{
+    document.getElementById('answer').innerText = getValue + ' is VOWEL';
+}
+else
+{
+    document.getElementById('answer').innerText = getValue + ' is CHARACTER';
+}
+&lt;/script&gt;
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <script>
+                let msg = alert('Check the Character Is Vowel or Not ?');
+                let getValue = prompt('Enter a character = ');
+                if(getValue == 'a' || getValue == 'A' || getValue == 'e' || getValue == 'E' || getValue == 'i' || getValue == 'I' || getValue == 'o' || getValue == 'O' || getValue == 'u' || getValue == 'U' )
+                {
+                    document.getElementById('answer').innerText = getValue + ' is VOWEL';
+                }
+                else
+                {
+                    document.getElementById('answer').innerText = getValue + ' is CHARACTER';
+                }
+            </script>
+        </div> 
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="24_Check_Positive_Negative_Zero_number.html">Next</a></button>
+    </div> 
+</body>
+
+</html>

@@ -5,53 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CommonStyles.css">
-    <title>AND operator</title>
+    <title>Positive Negative Number</title>
 </head>
 
 <body>
     <div class="question">
-        22. Check Number Is Positive or Negative in JavaScript?</div>
+        24. Write to check whether a number is negative, positive or zero?</div>
             <div class="answer">
             </div>
             <div class="side">
                 <div class="code">
-                <pre>
+                    <pre>
 &lt;h3 id="answer"&gt;&lt;/h3&gt;
-alert('This program checks the number is POSITIVE or NEGATIVE')
-let num = prompt('Enter the Number  = ');
+&lt;script&gt;
+alert('This program checks the number is POSITIVE, NEGATIVE or NEUTRAL')
+const num = parseInt(prompt('Enter the Number  = '));
 if (num > 0) {
     document.getElementById('answer').innerText = num + ' is POSITIVE NUMBER';
-} 
-else if(num == 0) {
+}
+else if (num == 0) {
     document.getElementById('answer').innerText = num + ' is NEUTRAL NUMBER';
 }
-else{
+else if (num < 0) {
     document.getElementById('answer').innerText = num + ' is NEGATIVE NUMBER';
+}   
+else {
+    document.getElementById('answer').innerHTML = 'You have not inserted any NUMBER';
 }
+&lt;/script&gt;
             </pre>
                 </div>
                 <div class="output-border">
                     <h3 id="answer"></h3>
                     <script>
-                        alert('This program checks the number is POSITIVE or NEGATIVE')
-                        let num = prompt('Enter the Number  = ');
+                        alert('This program checks the number is POSITIVE, NEGATIVE or NEUTRAL')
+                        const num = parseInt(prompt('Enter the Number  = '));
                         if (num > 0) {
                             document.getElementById('answer').innerText = num + ' is POSITIVE NUMBER';
-                        } 
-                        // else if(num == 0) {
-                        //     document.getElementById('answer').innerText = num + ' is NEUTRAL NUMBER';
-                        // }
-                        else if (num == " ") {
-                            document.getElementById('answer').innerHTML = 'you have not inserted any NUMBER';
-                        }   
-                        else{
+                        }
+                        else if (num == 0) {
+                            document.getElementById('answer').innerText = num + ' is NEUTRAL NUMBER';
+                        }
+                        else if (num < 0) {
                             document.getElementById('answer').innerText = num + ' is NEGATIVE NUMBER';
+                        }   
+                        else {
+                            document.getElementById('answer').innerHTML = 'You have not inserted any NUMBER';
                         }
                     </script>
                 </div>
             </div>
             <div class="btn-parent">
-                <button class="btn"><a href="23_Vowel_or_Character.html">Next</a></button>
+                <button class="btn"><a href="25_Ternary_Number.html">Next</a></button>
             </div>
 
 </body>

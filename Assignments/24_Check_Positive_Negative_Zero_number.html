@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CommonStyles.css">
+    <link rel="stylesheet" href="">
     <title>AND operator</title>
 </head>
 
 <body>
     <div class="question">
-        22. Check Number Is Positive or Negative in JavaScript?</div>
+        15. What is the result of the expression (5 > 3 && 2 < 4 )? </div>
             <div class="answer">
             </div>
             <div class="side">
@@ -34,16 +34,16 @@ else{
                     <h3 id="answer"></h3>
                     <script>
                         alert('This program checks the number is POSITIVE or NEGATIVE')
-                        let num = prompt('Enter the Number  = ');
+                        const num = parseInt(prompt('Enter the Number  = '));
                         if (num > 0) {
                             document.getElementById('answer').innerText = num + ' is POSITIVE NUMBER';
                         } 
-                        // else if(num == 0) {
-                        //     document.getElementById('answer').innerText = num + ' is NEUTRAL NUMBER';
-                        // }
-                        else if (num == " ") {
-                            document.getElementById('answer').innerHTML = 'you have not inserted any NUMBER';
-                        }   
+                        else if(num == 0) {
+                            document.getElementById('answer').innerText = num + ' is NEUTRAL NUMBER';
+                        }
+                        // else if (num == " ") {
+                        //     document.getElementById('answer').innerHTML = 'you have not inserted any NUMBER';
+                        // }   
                         else{
                             document.getElementById('answer').innerText = num + ' is NEGATIVE NUMBER';
                         }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Looping Structure</title>
+</head>
+
+<body>
+    <div class="question">
+        30. What are the looping structures in JavaScript? Any one Example?</div>
+    <div class="answer" style="margin-left: 40px;">
+        <p style="padding-left: 0;">The <strong>for loop</strong> iterates the elements for the fixed number of times.
+            condition is true</p>
+
+        <div class="short-answer">
+            <pre>
+let i = 5;
+    <span>for (let i = 0; i < 10; i++)</span>{
+
+  // some code
+}
+
+// Here i is 5
+                    </pre>
+        </div>
+        <hr>
+        <p style="padding-left: 0;">The<strong>while loop</strong> loops through a block of code as long as a specified
+            condition is true. </p>
+
+        <div class="short-answer">
+            <pre>
+<span>while (condition) </span> (condition1) {
+    // code block to be executed
+}
+            </pre>
+        </div>
+        <hr>
+        <p style="padding-left: 0;">The <strong>do while</strong> loop will execute the code block once, before checking
+            if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+
+        <div class="short-answer  ">
+            <pre>
+<span>do</span>{
+    // code block 
+    // code block
+    // code block
+    }
+    <span>while (condition);</span>
+            </pre>
+        </div>
+        <hr>
+        <p style="padding-left: 0;">The <strong>JavaScript for in</strong> statement loops through the properties of an
+            Object:</p>
+
+        <div class="short-answer  ">
+            <pre>
+<span>for (key in object) </span>{
+    // code block to be executed
+}
+                </pre>
+        </div>
+    </div>
+    <div class="side">
+
+        <div class="code">
+            <span>//For in loop</span> 
+            <pre>
+                <br>
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+&lt;script&gt;
+const person = { fname: "Meet", lname: "Patel", age: 21 };
+    let text = "";
+    <span>for (let p in person)</span> {
+        text += person[p] + " ";
+    }
+    document.getElementById("answer").innerHTML = text;
+&lt;/script&gt;
+            </pre>
+        </div>
+            <div class="output-border">
+                <h3 id="answer"></h3>
+
+                <script>
+                    const person = { fname: "Meet", lname: "Patel", age: 21 };
+                    let text = "";
+
+                    for (let p in person) {
+                        text += person[p] + " ";
+                    }
+                    document.getElementById("answer").innerHTML = text;
+                </script>
+            </div>
+    </div>
+
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="31_For_loop_Example-1.html">Next</a></button>
+    </div>
+</body>
+
+</html>

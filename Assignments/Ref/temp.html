@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="output-border">
+        <form action="">
+            <label for="">Enter Character : </label>
+            <input id="getChar" type="text">
+            <button class="form-btn" onclick="isVowel()">
+                Output
+            </button>
+        </form>
+        <h3 id="answer1"></h3>
+        <script>
+            function isVowel(char) {
+                var char = document.getElementById('getChar').value;
+                switch (char) {
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                    case 'A':
+                    case 'E':
+                    case 'I':
+                    case 'O':
+                    case 'U':
+                        document.getElementById('answer1').innerHTML = 'is VOWEL';
+                        break;
+
+                    default:
+                        document.getElementById('answer1').innerHTML = 'is CONSONANT';
+                        break;
+                }
+            }
+        </script>
+    </div>
+</div>
+</body>
+</html>
