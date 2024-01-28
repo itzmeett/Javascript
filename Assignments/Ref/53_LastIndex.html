@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>lastIndexOf()</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        53. Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of
+        JavaScript?
+        
+
+    </div>
+    <div class="answer">
+        <p>This code will output the position of the last occurrence of the letter "a" in the given string. </p>
+        <p> Keep in mind that the lastIndexOf method is case-sensitive, so if you want a case-insensitive search, you can convert the string and the search term to lowercase (or uppercase) before using lastIndexOf.</p>
+        <p>If you want to use the lastIndexOf method in JavaScript to find the position of the last occurrence of the letter "a" in the string "30 Days Of JavaScript," you can do it like this:
+        </p>
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+&lt;h3 id="answer2"&gt;&lt;/h3&gt;
+
+let str = '30 Days Of JavaScript';
+document.getElementById('answer').innerHTML = 'Original String is = ' + str;
+document.getElementById('answer2').innerHTML = 'indexOf() first occurrence = ' + str.lastIndexOf('a');
+
+&lt;/script&gt; 
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <h3 id="answer2"></h3>
+
+            <script>
+                let str = '30 Days Of JavaScript';
+                document.getElementById('answer').innerHTML = 'Original String is = ' + str;
+                document.getElementById('answer2').innerHTML = 'indexOf() first occurrence = ' + str.lastIndexOf('a');
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="38_Pattern-2.html">Next</a></button>
+    </div>
+</body>
+
+</html>

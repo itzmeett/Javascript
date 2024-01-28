@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Drawbacks of declare method in object</title>
+</head>
+
+<body>
+        <div class="question">
+            50. What is the drawback of declaring methods directly in JavaScript objects?
+        </div>
+        <div class="answer">
+            <p>It creates a new instance of the function object for each instance of the object, which can be memory inefficient</p>
+            <p>It binds the scope of the constructor to each function, which can prevent garbage collection of the constructor arguments</p>
+            <p>It cannot access the prototype chain of the object, which can limit the inheritance and modification of the methods</p>
+            <p>A better alternative is to use the prototype property of the object to declare methods, which can save memory, improve performance, and enable inheritance</p>
+        </div>
+        <div class="btn-parent">
+            <button class="btn"><a href="02_Variable.html">Next</a></button>
+        </div>
+</body>
+
+</html>

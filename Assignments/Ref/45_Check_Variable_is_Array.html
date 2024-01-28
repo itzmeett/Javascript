@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Check variable is Array</title>
+</head>
+
+<body>
+    <div class="question">
+        45. Write a JavaScript program to determine if a variable is array
+    </div>
+    <div class="answer">
+        <p>In JavaScript, there are a few ways to check if a variable is an array. Here are three of the most common methods:</p>
+        <p>1. Using the Array.isArray() method.</p>
+        <p>2. Using the instanceof operator.</p>
+        <p>3. Checking the constructor type.</p>
+    </div>
+    <div class="code-right code">
+        <pre>
+// Array.isArray()
+
+var myArray = [1, 2, 3];
+if <span>(Array.isArray(myArray))</span> {
+  console.log("myArray is an array");
+} else {
+  console.log("myArray is not an array");
+} 
+
+// instanceof Array
+
+if <span>(myArray instanceof Array)</span> {
+    console.log("myArray is an array");
+  } else {
+    console.log("myArray is not an array");
+  }    
+  
+ // constructor
+ 
+<span>var constructorType = myArray.constructor;</span>
+
+if (<span>constructorType === Array</span>) {
+  console.log("myArray is an array");
+} else {
+  console.log("myArray is not an array");
+}
+
+</pre>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="05_Undefined_&_Undeclared.html">Next</a></button>
+    </div>
+</body>
+
+</html>

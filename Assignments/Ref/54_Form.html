@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <form action="" name="myForm" onsubmit="return validateForm()">
+        Name : <input id="name" type="text"> <br>
+        <p class="form-name"></p>
+        Password : <input id="password" type="password"> <br>
+        <p class="form-password"></p>
+        <button name="submit" value="Submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var password = document.getElementById('password').value;
+            console.log(name);
+
+            if (name == null || name == '') {
+                alert('Please Enter your Name');
+                // document.getElementById('form-name').innerHTML = 'Please Enter your Name';
+                return false;
+            } else if (password.length < 6) {
+                alert('Password must be declare 6 characters long');
+                // document.getElementById('form-password').innerHTML = 'Password must be declare 6 characters long';
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

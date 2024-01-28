@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Patern-1</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        38.3 : Use pattern in console.log in JS?<br><br>
+        1<br>
+        2 3<br>
+        4 5 6<br>
+        7 8 9 10<br>
+        11 12 13 14 15<br>
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+let i, j, k = 1;
+for (i = 1; i <= 5; i++) {
+    for (j = 1; j <= i; j++) {
+        // document.getElementById('answer').innerText = (String.fromCharCode(k++) + ' ');
+        document.write((k++) + ' ');
+    }
+    // document.getElementById('answer').innerText = '<br>';
+    document.write('<br>');
+}
+                &lt;/script&gt; 
+            </pre>
+        </div>
+        <div class="output-border">
+
+            <h3 id="answer"></h3>
+            <script>
+                let i, j, k = 1;
+                for (i = 1; i <= 5; i++) {
+                    for (j = 1; j <= i; j++) {
+                        // document.getElementById('answer').innerText = (String.fromCharCode(k++) + ' ');
+                        document.write((k++) + ' ');
+                    }
+                    // document.getElementById('answer').innerText = '<br>';
+                    document.write('<br>');
+                }
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="38_Pattern-2.html">Next</a></button>
+    </div>
+</body>
+
+</html>

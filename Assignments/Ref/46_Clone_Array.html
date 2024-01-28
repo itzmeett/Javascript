@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Capitalixe String</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        46. Write a JavaScript program to clone an array?
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+let a = 1;
+let b = 0;
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        if (j % 2 == 0) {
+            document.getElementById('answer').innerText = ' 0 ';
+        }
+        else {
+            document.getElementById('answer').innerText = ' 1 ';
+        }
+    }
+    document.getElementById('answer').innerText = '\n';
+}
+                &lt;/script&gt; 
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <h3 id="answer2"></h3>
+            <script>
+               let array = [1,2,3,[4,1]];
+               let clone = JSON.parse(JSON.stringify(array));
+            //    let a = array.slice(',').map()
+            //    document.write(array + '<br>');
+            //    document.write(clone);
+
+               document.getElementById('answer').innerText += 'Original Array = ' + array + '<br' + 'Clone Array = ' + clone;
+            //    document.getElementById('answer').innerText += '<br>';
+            //    document.getElementById('answer2').innerText = 'Clone Array = ' + clone;
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="38_Pattern-2.html">Next</a></button>
+    </div>
+</body>
+
+</html>

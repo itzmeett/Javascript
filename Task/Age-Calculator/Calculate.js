@@ -1,4 +1,3 @@
-var now = Date();
-document.getElementById("date").value =now.getFullYear()  + "-" + ("0" + now.getMonth() + 1) + "-" + now.getDate();
-console.log(document.getElementById("date").value);
-// document.getElementsByClassName("date").value = DateString();
+let today = Date();
+document.getElementById("date").value = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)) + '-' + (today.getDate());
+console.log(document.getElementById("date").value)

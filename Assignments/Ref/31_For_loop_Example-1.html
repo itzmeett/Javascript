@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Loop Example-1</title>
 </head>
+
 <body>
-    <h3 id="answer"></h3>
+    <div id="answer"></div>
     <script>
         let output = '';
-        let br = document.createElement('br');
-        for (let i = 972;  i >= 897; i--) {
-            output += i;
+        // let br = document.createElement('div');
+        for (let i = 972; i >= 897; i--) {
+            // output += i;s
             // document.getElementById('answer').innerText = output.appendChild(br);
-            document.getElementById('answer').innerText = output + '<br>';
+            // document.write('<br>');
+            // document.write(i + '<br>');
+            output += i + '<br>'
+            // output += `<br>`
+            document.getElementById('answer').innerHTML = output;             // document.getElementById('answer').innerText = output;
         }
+        console.log(output);
     </script>
 </body>
+
 </html>

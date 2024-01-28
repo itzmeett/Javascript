@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Length of String</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        48. Print the length of the string on the browser console using console.log()?
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+&lt;h3 id="answer2"&gt;&lt;/h3&gt;
+let str = 'Hello, I am Meet Patel !!!';
+let strlen = (str.length);
+<span>console.log(str.length);</span>
+document.getElementById('answer').innerHTML = 'String is = ' + str;
+document.getElementById('answer2').innerHTML = 'Length of string = ' + strlen;
+&lt;/script&gt; 
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <h3 id="answer2"></h3>
+            <script>
+             let str = 'Hello, I am Meet Patel !!!';
+             let strlen = (str.length);
+             console.log(str.length);
+             document.getElementById('answer').innerHTML = 'String is = ' + str;
+             document.getElementById('answer2').innerHTML = 'Length of string = ' + strlen;
+             </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="38_Pattern-2.html">Next</a></button>
+    </div>
+</body>
+
+</html>

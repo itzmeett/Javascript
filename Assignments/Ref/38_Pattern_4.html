@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Patern-1</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        38.4 : Use pattern in console.log in JS?<br><br>
+        *<br>
+        * *<br>
+        * * *<br>
+        * * * *<br>
+        * * * * *<br>
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+let i, j, k = 1;
+for (i = 1; i <= 5; i++) {
+    for (j = 1; j <= i; j++) {
+        // document.getElementById('answer').innerText = (' * ');
+        ' * ');
+    }
+    // document.getElementById('answer').innerText = '<br>';
+    document.write('<br>');
+}
+                &lt;/script&gt; 
+            </pre>
+        </div>
+        <div class="output-border">
+            <label for=" i"></label>
+            <input type="number" id="i" name="i">
+            <label for="j"></label>
+            <input type="number" id="j" name="j">
+            <button onclick='fun()'>save</button>
+            <h3 id="answer"></h3>
+            <script>
+                let start, end;
+                let value = 0;
+                function fun() {
+                    start = Number(document.getElementById("i").value);
+                    end = Number(document.getElementById("j").value);
+                    let i, j;
+                    // document.getElementById('answer').innerHTML = ""
+                    for (i = start; i <= end; i++) {
+                        for (j = 1; j <= i; j++) {
+                            document.getElementById('answer').innerHTML += ' * ';
+                            // document.write(' * ');
+                        }
+                        document.getElementById('answer').innerHTML += '<br>';
+                        // document.write('<br>');
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="38_Pattern-2.html">Next</a></button>
+    </div>
+</body>
+
+</html>

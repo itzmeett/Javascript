@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Patern-1</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        39. Accept 3 numbers from user using while loop and check each numbers palindrome?
+
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+let i, j, k = 1;
+for (i = 1; i <= 5; i++) {
+    for (j = 1; j <= i; j++) {
+        // document.getElementById('answer').innerText = (' * ');
+        ' * ');
+    }
+    // document.getElementById('answer').innerText = '<br>';
+    document.write('<br>');
+}
+                &lt;/script&gt; 
+            </pre>
+        </div>
+        <div class="output-border">
+
+            <h3 id="answer"></h3>
+            <script>
+                let num= prompt('Enter Number : ') ;
+                function palindrome(num) {
+                    let numStr = num.toString();
+                    let result = numStr.split('').reverse().join('');
+                    return numStr === result;
+                }
+                if(palindrome(num) == true){
+                    document.write('yessss');
+                    console.log('yessss');
+                }
+                else{
+                    
+                    console.log('falseee');
+                    document.write('falsee');
+                }
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="38_Pattern-2.html">Next</a></button>
+    </div>
+</body>
+
+</html>

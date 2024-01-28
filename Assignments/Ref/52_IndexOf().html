@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>IndexOf()</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        52. Use indexOf to determine the position of the first occurrence of a 30 Days Of JavaScript?
+
+    </div>
+    <div class="answer">
+        <p> It returns the position of the first match, or -1 if not found.</p>
+        <p>For example, if you want to get the first occurrence of "a" in "30 Days Of JavaScript", you can write:</p>
+        <p>The value of result will be 4, because the first "a" is at the fourth index of the string (starting from 0).</p>
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+&lt;h3 id="answer2"&gt;&lt;/h3&gt;
+
+let str = '30 Days Of JavaScript';
+document.getElementById('answer').innerHTML = 'Original String is = ' + str;
+document.getElementById('answer2').innerHTML = 'indexOf() first occurrence = ' + str.indexOf('a');
+
+&lt;/script&gt; 
+            </pre>
+        </div>
+        <div class="output-border">
+            <h3 id="answer"></h3>
+            <h3 id="answer2"></h3>
+
+            <script>
+                let str = '30 Days Of JavaScript';
+                document.getElementById('answer').innerHTML = 'Original String is = ' + str;
+                document.getElementById('answer2').innerHTML = 'indexOf() first occurrence = ' + str.indexOf('a');
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="38_Pattern-2.html">Next</a></button>
+    </div>
+</body>
+
+</html>

@@ -82,17 +82,17 @@
         }
 
         .btn {
-            font-size: 25px;
-            padding: 10px 48px;
             border-radius: 6px;
             font-weight: bolder;
             background-color: #61523b;
             cursor: pointer;
             border: none;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            padding: 10px 48px;
+            font-size: 25px;
         }
-
-        button a {
+        
+        .btn a {
             color: #FFF4B3;
             text-decoration: none;
         }
@@ -148,7 +148,7 @@
           }
 
           #input-txt{
-              width: 100%;
+              width: 33%;
               height: 36px;
               border-radius: 4px;
               padding-left: 12px;

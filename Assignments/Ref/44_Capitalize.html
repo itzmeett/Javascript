@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Capitalixe String</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        44. Write a JavaScript program to capitalize first letter of a string?
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+let a = 1;
+let b = 0;
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+        if (j % 2 == 0) {
+            document.getElementById('answer').innerText = ' 0 ';
+        }
+        else {
+            document.getElementById('answer').innerText = ' 1 ';
+        }
+    }
+    document.getElementById('answer').innerText = '\n';
+}
+                &lt;/script&gt; 
+            </pre>
+        </div>
+        <div class="output-border">
+            <input type="text" id="input-txt">
+            <button class="form-btn" onclick="capitalize(txt)">Get Capitalize</button>
+            <h3 id="answer"></h3>
+            <script>
+                let txt = document.getElementById('input-form').value;
+                function capitalize(txt) {
+                    document.write(txt[0].toUpperCase() + txt.slice(1));
+                }
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="38_Pattern-2.html">Next</a></button>
+    </div>
+</body>
+
+</html>

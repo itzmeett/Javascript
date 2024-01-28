@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <title>Patern-1</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        51. Write a JavaScript program to get the current date. Expected Output : mm-dd-yyyy,
+mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy?
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+let today = new Date();
+let dd = today.getDate();
+let month = today.getMonth();
+let yy = today.getFullYear();
+
+let monthName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+let mm = (monthName[month]);
+
+document.getElementById('answer').innerHTML = 'Today date is = ' + dd + ' - ' + mm + ' - ' + yy;
+&lt;/script&gt; 
+            </pre>
+        </div>
+        <div class="output-border">
+
+            <h3 id="answer1"></h3>
+            <h3 id="answer2"></h3>
+            <h3 id="answer3"></h3>
+            <h3 id="answer4"></h3>
+            <script>
+                let today = new Date();
+                let dd = today.getDate();
+                let month = today.getMonth();
+                let yy = today.getFullYear();
+                // let monthName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                let mm = month + 1;
+                mm = (mm < 10) ? '0' + mm : mm;
+                dd = (dd < 10) ? '0' + dd : dd;
+                document.getElementById('answer1').innerHTML = 'Date Format = dd-mm-yyyy : ' + dd + ' - ' + mm + ' - ' + yy;
+                document.getElementById('answer2').innerHTML = 'Date Format = dd/mm/yyyy : ' + dd + ' / ' + mm + ' / ' + yy;
+                document.getElementById('answer3').innerHTML = 'Date Format = mm-dd-yyyy : ' + mm + ' - ' + dd + ' - ' + yy;
+                document.getElementById('answer4').innerHTML = 'Date Format = mm/dd/yyyy : ' + mm + ' / ' + dd + ' / ' + yy;
+            </script>
+        </div>
+    </div>
+    <div class="btn-parent">
+        <button class="btn"><a href="38_Pattern-2.html">Next</a></button>
+    </div>
+</body>
+
+</html>

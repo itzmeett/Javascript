@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CommonStyles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <title>Patern-1</title>
+</head>
+
+<body>
+    <div class="question" style="font-size: larger;">
+        42. Write a JavaScript program to compare two objects?
+    </div>
+    <div class="side">
+        <div class="code">
+            <pre>
+&lt;script&gt;
+&lt;h3 id="answer"&gt;&lt;/h3&gt;
+let today = new Date();
+let dd = today.getDate();
+let month = today.getMonth();
+let yy = today.getFullYear();
+
+let monthName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+let mm = (monthName[month]);
+
+document.getElementById('answer').innerHTML = 'Today date is = ' + dd + ' - ' + mm + ' - ' + yy;
+&lt;/script&gt; 
+            </pre>
+        </div>
+        <div class="output-border">
+
+            <h3 id="answer"></h3>
+            <h3 id="answer2"></h3>
+            <script>
+                // const _ = require("lodash");
+                // import _ from "lodash";
+                let obj1 = { Name: 'Meet', age: '21' }
+                let obj2 = { Name: 'Meet', age: '21' }
+                let obj3 = { age: '21', Name: 'Meet' }
+
+                document.getElementById('answer').innerHTML = 'JSON.stringify(obj1) === JSON.stringyfy(obj2) : ' + JSON.stringify(obj1) === JSON.stringify(obj2);
+                document.getElementById('answer2').innerHTML = 'JSON.stringify(obj1) === JSON.stringyfy(obj3) : ' + JSON.stringify(obj1) === JSON.stringify(obj3);
+                // document.getElementById('answer').innerHTML = ' _.isEqual(obj1, obj2) :' + _.isEqual(obj1, obj2);
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
