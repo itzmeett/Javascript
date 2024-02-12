@@ -8,29 +8,32 @@
 </head>
 
 <body>
-    <form action="" name="myForm" onsubmit="return validateForm()">
-        Name : <input id="name" type="text"> <br>
-        <p class="form-name"></p>
-        Password : <input id="password" type="password"> <br>
-        <p class="form-password"></p>
-        <button name="submit" value="Submit">Submit</button>
+    <form action="" name="myForm"   >
+        Name : <input name="name" id="name" type="text"> <br>
+        Password : <input name="password" id="password" type="password"> <br>
+        <p id="form-error"></p>
+        <button onclick="validateForm()" name="submit" value="Submit">Submit</button>
     </form>
 
     <script>
         function validateForm() {
-            var name = document.getElementById('name').value;
+            event.preventDefault();
+            // var name = document.getElementById('name').value;
+            var name = document.forms['myForm']['name'].value;
+            // console.log(name);
             var password = document.getElementById('password').value;
-            console.log(name);
+            // console.log(password);
 
             if (name == null || name == '') {
-                alert('Please Enter your Name');
-                // document.getElementById('form-name').innerHTML = 'Please Enter your Name';
-                return false;
+                // alert('Please Enter your Name');
+                var error = 'Please Enter your Name';
+                // return false;
             } else if (password.length < 6) {
-                alert('Password must be declare 6 characters long');
-                // document.getElementById('form-password').innerHTML = 'Password must be declare 6 characters long';
-                return false;
+                // alert('Password must be declare 6 characters long');
+                var error = 'Password must be declare 6 characters long';
+                // return false;
             }
+            document.getElementById('form-error').innerHTML = error;        
         }
     </script>
 </body>
